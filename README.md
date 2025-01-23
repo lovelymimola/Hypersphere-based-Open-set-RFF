@@ -42,6 +42,7 @@ obtain the classification results, including the ACC and predicted labels, where
 you can draw the confusion matrix by "./ADS-B_Open-Set/EVT/cm/CM.m" using the predicted labels and real labels
 
 # Classification Accuracy (%)
+
  Methods         | ADS-B (K=8, N=0) | ADS-B (K=8, N=1) | ADS-B (K=8, N=2) 
  ----            | -----            | ------           | ----- 
  SoftMax         | 98.87            |  88.22           | 81.10 
@@ -51,6 +52,16 @@ you can draw the confusion matrix by "./ADS-B_Open-Set/EVT/cm/CM.m" using the pr
  TripletNet      | 96.88            |  86.11           | 77.50 
  HyperRSI (Ours) | 99.88            |  92.33           | 92.30 
 
+ Methods         | Wi-Fi (K=10, N=0) | Wi-Fi (K=10, N=3) | Wi-Fi (K=10, N=6) 
+ ----            | -----            | ------           | ----- 
+ SoftMax         | 99.64            |  78.85           | 64.65 
+ OpenMax         | 99.64            |  87.97           | 89.39 
+ MLOSR           | 99.88            |  76.86           | 62.52 
+ SR2CNN          | 100.00           |  84.31           | 86.98 
+ TripletNet      | 96.91            |  75.00           | 60.68 
+ HyperRSI (Ours) | 100.00           |  93.28           | 94.41 
+
+Note: SoftMax collaborates with a threshold to complete open-set identification, where the threshold is 0.9; K is the number of known devices that occurred in the training process; N is the number of unknown devices that occur in the testing process; Number represents the top-1 accuracy, and number represents the top-2 accuracy。
 
 # E-mail
 If you have any question, please feel free to contact us by e-mail (1020010415@njupt.edu.cn).
