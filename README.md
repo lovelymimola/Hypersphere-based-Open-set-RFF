@@ -64,11 +64,11 @@ you can draw the confusion matrix by "./ADS-B_Open-Set/EVT/cm/CM.m" using the pr
 Note: SoftMax collaborates with a threshold to complete open-set identification, where the threshold is 0.9; K is the number of known devices that occurred in the training process; N is the number of unknown devices that occur in the testing process; Number represents the top-1 accuracy, and number represents the top-2 accuracy。
 
 # Dataset
-We use the dataset proposed in paper [55] and [56] to evaluate our proposed method. The former is a large-scale real-world radio signal dataset based on a special aeronautical monitoring system, ADS-B, and the latter is WiFi dataset collected from USRP X310 radios that emit IEEE 802.11a standards compliant frames. The number of categories of ADS-B dataset and WiFi dataset is 10 and 16, respectively. The length of each sample of ADS-B dataset and WiFi dataset is 4,800 and 6,000, respectively. The number of training samples of ADS-B dataset and WiFi datsset is 3, 080. The number of testing samples of ADS-B dataset and WiFi dataset is 1,000 and 16,004, respectively. 
+We use the dataset proposed in paper [1] and [2] to evaluate our proposed method. The former is a large-scale real-world radio signal dataset based on a special aeronautical monitoring system, ADS-B, and the latter is WiFi dataset collected from USRP X310 radios that emit IEEE 802.11a standards compliant frames. The number of categories of ADS-B dataset and WiFi dataset is 10 and 16, respectively. The length of each sample of ADS-B dataset and WiFi dataset is 4,800 and 6,000, respectively. The number of training samples of ADS-B dataset and WiFi datsset is 3, 080. The number of testing samples of ADS-B dataset and WiFi dataset is 1,000 and 16,004, respectively. 
 
-[55] Y. Tu, Y. Lin, et al., “Large-scale real-world radio signal recognition with deep learning,” Chin. J. Aeronaut., vol. 35, no. 9, pp. 35–48, Sept. 2022.
+[1] Y. Tu, Y. Lin, et al., “Large-scale real-world radio signal recognition with deep learning,” Chin. J. Aeronaut., vol. 35, no. 9, pp. 35–48, Sept. 2022.
 
-[56] K. Sankhe, M. Belgiovine, F. Zhou, S. Riyaz, S. Ioannidis, and K. Chowdhury, “ORACLE: Optimized radio classification through convolutional neural networks,” in IEEE Conf. Comput. Commun., Apr.2019, pp. 370-378.
+[2] K. Sankhe, M. Belgiovine, F. Zhou, S. Riyaz, S. Ioannidis, and K. Chowdhury, “ORACLE: Optimized radio classification through convolutional neural networks,” in IEEE Conf. Comput. Commun., Apr.2019, pp. 370-378.
 
 The ADS-B dataset can be downloaded from the Link: https://pan.baidu.com/s/13qW5mnfgUHBvWRid2tY2MA Passwd：eogv
 
