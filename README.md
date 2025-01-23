@@ -13,6 +13,7 @@ You can find the details in our paper: X. Fu, Y. Wang, Y. Lin, T. Ohtsuki, G. Gu
 # Requirement
 pytorch 1.10.2
 python 3.6.13
+matlab R2020a
 
 # How to run the code?
 (1) First Step
