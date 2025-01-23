@@ -12,11 +12,13 @@ You can find the details in our paper: X. Fu, Y. Wang, Y. Lin, T. Ohtsuki, G. Gu
 
 # How to run the code?
 (1) First Step
+
 run "./ADS-B_Close-Set/train.py"
 
 obtain the identification model and save it in "./ADS-B_Close-Set/model_weight/"
 
 (2) Second Step
+
 move the model to "./ADS-B_Open-Set/model_weight"
 
 run "./ADS-B_Open-Set/test.py"
@@ -24,6 +26,7 @@ run "./ADS-B_Open-Set/test.py"
 obtain the features of training samples and testing samples, and save them in "./ADS-B_Open-Set/EVT/data/"
 
 (3) Third Step
+
 run the "./ADS-B/EVT/plot_sphere_bl.m"
 
 obtain the consine similarity of training samples and testing samples, and save them in "./ADS-B_Open-Set/EVT/data/"
