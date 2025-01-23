@@ -10,6 +10,10 @@ Radiofrequency signal Identification (RSI) provides a critical security solution
 
 You can find the details in our paper: X. Fu, Y. Wang, Y. Lin, T. Ohtsuki, G. Gui and H. Sari, "Toward Robust Open-Set Radiofrequency Signal Identification in Internet of Things Using Hypersphere Manifold Embedding," in IEEE Internet of Things Journal, vol. 11, no. 24, pp. 41235-41247, 15 Dec.15, 2024, doi: 10.1109/JIOT.2024.3457832.
 
+# Requirement
+pytorch 1.10.2
+python 3.6.13
+
 # How to run the code?
 (1) First Step
 
@@ -37,5 +41,18 @@ obtain the classification results, including the ACC and predicted labels, where
 
 you can draw the confusion matrix by "./ADS-B_Open-Set/EVT/cm/CM.m" using the predicted labels and real labels
 
-# Results
+# Classification Accuracy (%)
+ Methods         | ADS-B (K=8, N=0) | ADS-B (K=8, N=1) | ADS-B (K=8, N=2) 
+ ----            | -----            | ------           | ----- 
+ SoftMax         | 98.87            |  88.22           | 81.10 
+ OpenMax         | 98.87            |  87.22           | 87.20 
+ MLOSR           | 99.00            |  87.78           | 79.00 
+ SR2CNN          | 99.63            |  82.00           | 83.50 
+ TripletNet      | 96.88            |  86.11           | 77.50 
+ HyperRSI (Ours) | 99.88            |  92.33           | 92.30 
+
+
+# E-mail
+If you have any question, please feel free to contact us by e-mail (1020010415@njupt.edu.cn).
+
 
